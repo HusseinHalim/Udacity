@@ -1,0 +1,98 @@
+/*##################################Defaults########################################*/
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: linear-gradient(to bottom ,#003366,#006666,#00cc99,#05392c);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    line-height: 1.5;
+}
+/*************************************Nav Bar****************************************/
+nav{
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+}
+#nav-bar__list{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-bar-item{
+    list-style: none;
+    float: left;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    min-height: 1rem;
+    text-align: center;
+    padding: 0.75rem;
+    color: #666;
+}
+.nav-bar-item a:hover,
+.active a{
+    color: white;
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+}
+/***********************************SECTIONS******************************************/
+hr{
+    height: 1.5px;
+    color: yellow;
+}
+section p{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+ .active {
+    background: linear-gradient(to bottom,rgba(28, 67, 32, 0.716),rgba(63, 126, 96, 0.716));
+}
+#page-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+}
+#sections__div{
+    margin: 1rem;
+}
+#sections__div > section:nth-child(odd){
+    text-align: right;
+}
+.section-title{
+    padding: 2.35rem;
+    font-size: 4.5rem;
+}
+
+/***********************************FOOTER********************************************/
+#footer__div{
+    background-color: black;
+    text-align: center;
+    color: white;
+    box-shadow: 0.15rem 0.15rem 0.15rem black;
+}
+/**********************************MEDIA query******************************************/
+@media screen and (max-width:600px) {
+    #nav-bar__list{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .section-title{
+    padding: 7rem;
+   }
+}
